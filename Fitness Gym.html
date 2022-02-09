@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+</head>
+
+<link href="<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100&family=Neonderthaw&family=Noto+Sans+JP:wght@900&family=Roboto+Mono:wght@100&family=Rubik+Beastly&family=Sedgwick+Ave&family=Source+Serif+4&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="CSS/firstproject.css"> -->
+<style>
+    /* CSS RESET */
+    body{
+        font-family: 'Source Serif 4', sans-serif;
+        color:white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/img3.jpg');
+         height: 1050px;
+        /* width: 3510px;*/
+         background-repeat: no-repeat;  
+    }
+
+    .left
+    {
+         display: inline-block; 
+         position:absolute;
+        /* border:1px solid black; */
+        left: 30px;
+        top:32px;
+    }
+
+    .left img{
+         position: relative;
+         filter: invert(100%);
+        left: 12px;
+        width:66px ;
+    }
+
+    .left div{
+        /* line-height: 15px; */
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .mid
+    {
+         display: block; 
+         width:53%;
+         margin: 35px auto;
+        /* border: 2px solid rgb(0, 0, 0); */
+    }
+
+    .right
+    {
+        position: absolute;
+        right:34px;
+        top:32px;
+        display: inline-block;
+        /* border: 2px solid purple; */
+    }
+
+    .navbar
+    {
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration:none;
+        padding: 23px 23px;
+    }
+
+    .navbar li a:hover
+    {
+        color: grey;
+        text-decoration: underline;
+    }
+
+    .btn
+    {
+        margin:0px 7px;
+        color: white;
+        background-color: grey;
+        font-weight: bold;
+        padding: 3px 6px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .btn:hover
+    {
+        background-color:rgb(26, 22, 22);
+        color:lightskyblue;
+    }
+
+    .container
+    {
+        /* border: 1px solid rgb(24, 23, 23); */
+        margin: 44px 55px;
+        padding: 105px 605px;
+        width: 40%;
+        border-radius: 4px5
+    }
+
+    .form-grp input
+    {
+        text-align: center;
+        display: block;
+        width:130px;
+        border:2px solid black;
+        padding: 6px;
+        margin:4px auto;
+        border-radius:8px ;
+    }
+    .container h1
+    {
+        text-align: center;
+    }
+    .container button
+    {
+        display: block;
+        width: 23%;
+        margin: 23px auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/img4.png" alt="">
+           <div>FITNESS GYM</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Trainer</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Fitness Gym near you</h1>
+
+        <form action="noaction.php">
+
+            <div class="form-grp">
+                 <input type="text" name="" placeholder="Enter your Name">
+            </div>
+
+            <div class="form-grp">
+                <input type="email" name="" placeholder="Enter your Email">
+           </div>
+
+           <div class="form-grp">
+            <input type="Gender" name="" placeholder="Enter your Gender ">
+           </div>
+
+           <div class="form-grp">
+           <input type="Locality" name="" placeholder="Enter your Locality">
+           </div>
+
+            <button class="btn">Submit Now</button>
+        </form>
+    </div>
+</body>
+</html>
